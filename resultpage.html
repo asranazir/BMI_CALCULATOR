@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="./calculate_bmi.js"></script>
+</head>
+<body>  
+    <h2>BMI Result</h2>
+    
+    <p id="result"></p>
+    <script>
+        var result = localStorage.getItem("result");
+        var BMI = localStorage.getItem("BMI");
+        console.log("Stored Result: " + result);
+        console.log("Stored BMI: " + BMI);
+        document.getElementById("result").innerHTML = "Your BMI is: " + BMI + " (" + result + ")";
+    </script>
+</body>
+</html>
